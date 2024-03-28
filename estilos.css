@@ -1,0 +1,611 @@
+body {
+    margin: 0;
+   
+}
+
+
+header {
+    background: linear-gradient(135deg, #000000, #FDB827); /* Gradiente de verde para verde-azulado */
+    padding: 20px 0;
+    font-family: 'Magra', sans-serif;
+    position: fixed; /* Torna o cabeçalho fixo */
+    top: 0; /* Alinha o cabeçalho no topo da página */
+    width: 100%; /* Largura total */
+    z-index: 1000; /* Certifica-se de que o cabeçalho esteja sobre os outros elementos */
+  
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicia o sidebar fora da tela */
+    width: 200px;
+    height: 40%;
+    background-color: #23120B;
+    color: #fff;
+    transition: left 0.3s ease;
+}
+
+/* Estilos para o conteúdo do sidebar */
+.sidebar-content {
+    padding: 20px;
+}
+
+/* Estilos para o botão que abre o sidebar */
+#openSidebar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    display: none; /* Inicia oculto */
+}
+
+#closeSidebar {
+    cursor: pointer;
+    display: block; /* Inicia visível */
+    text-align: right;
+    padding: 10px;
+}
+
+
+.main-nav {
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 20px; /* Espaço entre os itens */
+}
+
+.nav-item a {
+    color: #23120B;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
+.nav-item a:active,
+.nav-item a:hover {
+    color: #ffffff; /* Cor dourada quando clicado ou ao passar o mouse */
+}
+
+.inicio-section {
+    padding: 100px 0; /* Aumentar o padding para dar mais espaço ao redor do conteúdo */
+    position: relative;
+    background-image: url('natureza-morta-com-a-balanca-da-justica.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Magra', sans-serif;
+    font-size: 20px; /* Ajustar o tamanho da fonte conforme necessário */
+    line-height: 1.6; /* Ajustar o espaçamento entre linhas para melhor legibilidade */
+    text-align: center;
+    min-height: 400px; /* Definir uma altura mínima para a seção */
+}
+
+/* Estilos para o conteúdo dentro da seção "Início" */
+.inicio-content {
+    display: flex;
+    position: static; /* Mudado para relativo */
+    text-align: center; /* Alinha o texto ao centro */
+    color: #daa520; /* Cor do texto */
+    display: flex; /* Adicionado display flex */
+    justify-content: center; /* Centraliza horizontalmente os elementos */
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.logo-container {
+    margin-right: 5px; /* Adiciona uma margem à direita para separar a imagem do texto */
+}
+
+.logo-container img {
+    max-width: 200px; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para o texto dentro da seção "Início" */
+.text-container h2 {
+    margin: 0; /* Remove margem padrão do h2 */
+    margin-bottom: 20px; /* Adiciona uma margem inferior ao h2 */
+    
+}
+
+/* Estilos para o segundo h2 dentro da seção "Início" */
+.inicio-content p {
+    margin: 0; /* Remove margem padrão do h2 */
+    margin-bottom: 20px; /* Adiciona uma margem inferior ao h2 */
+    color: #ffffff;
+  
+}
+
+.retangulo {
+    background: linear-gradient(135deg, #000000, #FDB827); /* Gradiente de verde para verde-azulado */
+    color: #ffffff; /* Cor do texto */
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.1) inset; /* Sombra */
+    text-align: center;
+    position: relative; /* Manter a posição relativa */
+    z-index: 1; /* Coloca sobre a imagem de fundo */
+    font-family: 'Magra', sans-serif;
+    width: 80%; /* Largura do retângulo */
+    margin: 0 auto; /* Margens automáticas para centralização horizontal */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.p_retangulo {
+    color: black;
+    
+}
+
+.botao-whatsapp {
+    display: inline-block;
+    background-color: #23120B; /* Cor do botão */
+    color: rgb(255, 255, 255); /* Cor do texto do botão */
+    padding: 10px 20px;
+    border-radius: 20px; /* Borda arredondada */
+    text-decoration: none;
+    margin-top: 20px; /* Espaço entre o texto e o botão */
+}
+
+.botao-whatsapp:hover {
+    background-color: #FDB827; /* Cor do botão ao passar o mouse */
+    font-family: 'Magra', sans-serif;
+}
+
+.sobre-nos {
+    background-color: #000000;
+    
+}
+
+.sobre-nos-section {
+    padding: 50px 0; /* Espaçamento interno */
+}
+
+.container {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centralizar o conteúdo na página */
+    display: flex; /* Usar flexbox para alinhar os itens */
+    align-items: center; /* Alinhar verticalmente */
+}
+
+.foto-advogado {
+    flex: 1; /* Ocupar o espaço disponível */
+    padding: 0 20px; /* Espaçamento interno */
+}
+
+.foto-advogado img {
+    width: 100%; /* Garantir que a imagem ocupe toda a largura */
+    border-radius: 10px; /* Adicionar borda arredondada */
+}
+
+.texto-sobre {
+    flex: 1; /* Ocupar o espaço disponível */
+    padding: 0 20px; /* Espaçamento interno */
+    font-family: 'Magra', sans-serif;
+    
+}
+
+.texto-sobre h2 {
+    margin-top: 0; /* Remover margem superior dos títulos */
+ 
+}
+
+.paragrafo {
+    color: #000000;
+    font-weight: bold;
+}
+
+.h2_sobre {
+    color: #daa520; /* Cor do texto */
+}
+
+.nome {
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000; 
+    text-align: right;
+}
+
+.paragrafooab {
+    color: #000000;
+    text-align: right;
+    font-family: 'Magra', sans-serif;
+}
+
+.delayed-div {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os ícones sejam envolvidos quando não couberem na largura */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Centraliza os ícones verticalmente */
+    font-family: 'Magra', sans-serif;
+    background: linear-gradient(135deg, #FDB827, #23120B);
+    padding: 20px 0; /* Espaçamento interno */
+}
+
+.icons-container img {
+    width: 50px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    margin-right: 40px; /* Espaço entre a imagem e o texto */
+    margin-bottom: 20px; /* Espaço entre as divs */
+}
+
+.countdown {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: 'Magra', sans-serif;
+}
+
+.countdown span {
+    font-weight: bold;
+    margin-left: 5px; /* Ajuste para reduzir o espaçamento entre o número e o texto */
+    color: #ffffff;
+    font-family: 'Magra', sans-serif;
+}
+
+
+footer {
+    background-color: #000000; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+}
+
+footer p {
+    margin: 0; /* Remove margem padrão do parágrafo */
+}
+
+
+
+.container {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centralizar o conteúdo na página */
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Espaçamento entre os serviços */
+    margin-bottom: 40px;
+}
+
+.servico {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Magra', sans-serif;
+}
+
+.servico .icone {
+    margin-bottom: 15px;
+}
+
+.servico img {
+    width: 50px; /* Tamanho do ícone */
+    height: 50px;
+    border-radius: 50%; /* Para criar um círculo */
+    background-color: #ffffff; /* Cor de fundo do círculo */
+    padding: 10px; /* Espaçamento interno para o círculo */
+}
+
+.h2_paragrafo {
+    text-align: center;
+    margin: top -5px; /* Adicione a margem superior desejada */
+    font-family: 'Magra', sans-serif;
+    color: #000000;
+}
+
+.servico{
+    background: linear-gradient(135deg, #FDB827, #23120B);
+    
+}
+
+.h3_servico {
+    color: #F1F1F1;
+}
+
+.p_servico {
+    color: #23120B;
+    font-size: medium;
+}
+
+/* Aplique a posição relativa ao contêiner do carrossel */
+.swiper-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Impede a rolagem horizontal */
+    /*background: linear-gradient(135deg, #000000, #00bfa5);*/
+    background-image: url("testeimg.avif");
+}
+
+/* Ajuste a altura do contêiner do carrossel */
+.swiper-container {
+    height: 500px; /* Defina a altura conforme necessário */      
+}
+
+/* Ajuste a posição dos botões de navegação dentro do contêiner do carrossel */
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    z-index: 10; /* Certifique-se de que os botões estejam sobre as imagens */
+}
+
+/* Estilize a seta */
+.arrow {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    z-index: 10; /* Certifique-se de que os botões estejam sobre as imagens */
+}
+
+/* Estilize a paginação */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-20%);
+    z-index: 10; /* Certifique-se de que a paginação esteja sobre as imagens */
+}
+
+.carrossel {
+    color: #ffffff;
+    font-family: 'Magra', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.paragrafo_carrossel {
+    color: #D5A35F;
+    position: absolute;
+    top: 60%;
+    left: 27%;
+    font-family: 'Magra', sans-serif;
+    font-weight: 400;
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: row; /* Organiza os elementos em linha */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    height: 600px;
+    background: linear-gradient(135deg, #FDB827, #23120B);
+    gap: 10px;
+}
+
+#localizacao iframe {
+    width: 1000%; /* Ajuste a largura conforme necessário */
+    max-width: 700px; /* Defina a largura máxima do iframe */
+    height: 300px; /* Ajuste a altura conforme necessário */
+    border: 0; /* Remova a borda */
+    margin-top: 20px; /* Adicione um espaço entre o mapa e o topo da seção */
+}
+
+.icone-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
+.icone-wrapper img {
+    cursor: pointer; /* Altera o cursor ao passar sobre o ícone */
+}
+
+/* Estilize o ícone quando o cursor passar sobre ele */
+.icone-wrapper img:hover {
+    opacity: 0.7; /* Reduz a opacidade quando o cursor passa sobre o ícone */
+}
+
+#localizacao h1 {
+    font-size: 24px; /* Tamanho da fonte para o título */
+    color: #23120B; /* Cor do texto do título */
+    margin-bottom: 10px; /* Espaço entre o título e o parágrafo */
+    font-family: 'Magra', sans-serif;
+}
+
+#localizacao p {
+    font-size: 18px; /* Tamanho da fonte para o parágrafo */
+    color: #ffffff; /* Cor do texto do parágrafo */
+    font-family: 'Magra', sans-serif;
+}
+
+.enderecos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.enderecos .icone-texto {
+    display: flex;
+    align-items: center;
+}
+
+.enderecos .icone-texto img {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+
+@media screen and (min-width: 768px) {
+    .inicio-content {
+        flex-direction: row; /* Altera a direção do flex para linha em dispositivos maiores */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .text-container {
+        text-align: left; /* Alinha o texto à esquerda em dispositivos maiores */
+    }
+
+    .logo-container {
+        margin-right: 20px; /* Adiciona margem à direita para separar a logo do texto em dispositivos maiores */
+        margin-bottom: 0; /* Remove a margem inferior em dispositivos maiores */
+    }
+}
+
+/* Estilos para telas menores que 480px (dispositivos móveis em modo retrato) */
+@media only screen and (max-width: 480px) {
+    .retangulo {
+        width: 95%; /* Ajuste a largura conforme necessário */
+    }
+
+    .countdown {
+        font-size: 16px; /* Reduza o tamanho da fonte para economizar espaço */
+    }
+
+    .foto-advogado,
+    .texto-sobre {
+        padding: 0; /* Remova o preenchimento lateral */
+        margin-bottom: 20px; /* Adicione um espaço entre os elementos */
+    }
+
+    .foto-advogado img {
+        width: 100%; /* Garanta que a imagem ocupe toda a largura */
+    }
+
+    #localizacao iframe {
+        width: 100%; /* Garanta que o mapa ocupe toda a largura */
+        height: 300px; /* Ajuste a altura conforme necessário */
+    }
+}
+
+/* Estilos para telas menores que 768px (dispositivos móveis em modo paisagem e tablets) */
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 10px 0; /* Reduza o padding para economizar espaço */
+    }
+
+    .main-nav {
+        text-align: center; /* Centralize os itens do menu */
+    }
+
+    .nav-item {
+        display: block; /* Altere para bloco para empilhar os itens */
+        margin-right: 0; /* Remova a margem direita */
+        margin-bottom: 10px; /* Adicione um espaço entre os itens */
+    }
+
+    
+    .retangulo {
+        width: 90%; /* Ajuste a largura conforme necessário */
+    }
+
+    .icons-container {
+        margin-right: 0; /* Remova a margem direita */
+        margin-bottom: 10px; /* Adicione um espaço entre as divs */
+    }
+
+    .container {
+        flex-direction: column; /* Altere para uma coluna para empilhar os elementos */
+        align-items: center; /* Centralize os itens horizontalmente */
+    }
+
+    .foto-advogado,
+    .texto-sobre {
+        padding: 0; /* Remova o preenchimento lateral */
+        margin-bottom: 20px; /* Adicione um espaço entre os elementos */
+    }
+
+    .foto-advogado img {
+        width: 100%; /* Garanta que a imagem ocupe toda a largura */
+    }
+
+    .countdown,
+    .paragrafo_carrossel {
+        text-align: center; /* Centralize o texto */
+    }
+
+    .localizacao {
+        flex-direction: column; /* Altere para uma coluna para empilhar os elementos */
+        height: auto; /* Ajuste a altura conforme necessário */
+    }
+
+    #localizacao iframe {
+        width: 100%; /* Garanta que o mapa ocupe toda a largura */
+        height: 300px; /* Ajuste a altura conforme necessário */
+    }
+
+    .enderecos {
+        align-items: center; /* Centralize os elementos horizontalmente */
+        text-align: center; /* Centralize o texto */
+    }
+
+}
+
+@media (max-width: 760px) {
+    .header-nav {
+        display: none; /* Esconde a lista de navegação */
+    }
+    #openSidebar {
+        display: block; /* Mostra o botão para abrir o sidebar */
+    }
+
+    .nav-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para telas maiores que 766px */
+@media (min-width: 766px) {
+    .sidebar {
+        display: none; /* Esconde o sidebar */
+    }
+
+    .header-nav {
+        display: block; /* Mostra a lista de navegação no header */
+    }
+}
+
+
+
+/* Estilos para telas menores que 768px */
+@media (max-width: 767px) {
+    .retangulo {
+        margin-top: 50px; /* Aumenta a margem superior para empurrar para baixo */
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .swiper-slide {
+        display: block; /* Altera o display para 'block' para empilhar os slides verticalmente */
+        margin: 20px auto; /* Adiciona margens para espaçamento entre os slides */
+        width: 90%; /* Define a largura para ocupar a largura disponível */
+    }
+
+    .paragrafo_carrossel {
+        top: 70%; /* Ajusta a posição vertical do parágrafo para baixo */
+    }
+
+    .swiper-pagination,
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none; /* Oculta a paginação e os botões de navegação */
+    }
+}
